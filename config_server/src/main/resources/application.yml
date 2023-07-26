@@ -1,0 +1,16 @@
+server:
+  port: 8888
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/param-jadhav/config_server          
+# Common properties for all Actuator endpoints
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*" # Expose all endpoints, can be a comma-separated list of endpoint IDs
+          
